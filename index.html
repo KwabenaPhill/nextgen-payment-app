@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#000000" />
-<title>NextGen Payment App v5.1</title>
+<title>NextGen Payment App v5.2</title>
 <link rel="manifest" href="./manifest.webmanifest" />
 <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
 <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
@@ -31,11 +31,12 @@ body{font-family:'Inter',-apple-system,system-ui,sans-serif;background:var(--bg)
 button,input,select,textarea{font-family:inherit;}
 
 header{padding:20px 18px 10px;max-width:640px;margin:0 auto;display:flex;align-items:center;gap:12px;}
-.logo{width:132px;height:72px;border-radius:14px;background:#fff;display:grid;place-items:center;flex:none;overflow:hidden;padding:4px 6px;}
+.logo{width:76px;height:42px;border-radius:10px;background:#fff;display:grid;place-items:center;flex:none;overflow:hidden;padding:2px 4px;}
+.logo img{width:100%;height:100%;object-fit:contain;display:block;}
 .brand-small{display:none;}
 .logo img{width:100%;height:100%;object-fit:contain;display:block;}
 .brand-small{font-size:11px;letter-spacing:3px;color:var(--muted);font-weight:700;text-transform:uppercase;}
-.brand-big{font-size:24px;font-weight:800;letter-spacing:-.6px;line-height:1.15;}
+.brand-big{font-size:21px;font-weight:800;letter-spacing:-.5px;line-height:1.15;white-space:nowrap;}
 .ver{font-size:11px;font-weight:700;color:var(--dim);background:var(--card2);border-radius:99px;padding:3px 8px;margin-left:auto;align-self:flex-start;margin-top:4px;}
 .tripline{max-width:640px;margin:0 auto 12px;padding:0 18px;display:flex;gap:8px;flex-wrap:wrap;}
 .pill{font-size:12.5px;font-weight:700;border-radius:99px;padding:6px 11px;background:var(--card);border:1px solid var(--line);color:#ddd;display:inline-flex;gap:6px;align-items:center;}
@@ -176,7 +177,7 @@ nav button.on{color:var(--green);}
     <div class="brand-small" id="h-group">NEXT GEN</div>
     <div class="brand-big" id="h-title">Payment App</div>
   </div>
-  <span class="ver">v5.1</span>
+  <span class="ver">v5.2</span>
 </header>
 <div class="tripline" id="h-trip"></div>
 
@@ -399,7 +400,7 @@ nav button.on{color:var(--green);}
 "use strict";
 var KEY = 'nextgen_pay_v5';      /* this version's data */
 var OLD_KEY = 'nextgen_pay_v1';  /* v4.5 data: read once, never changed */
-var VERSION = '5.1';
+var VERSION = '5.2';
 
 var DEFAULT_APP = {group:'NEXT GEN', title:'Payment App', cur:'GH₵', theme:'gb'};
 var DEFAULT_CFG = {name:'', dest:'Assin Manso', date:'', depart:'09:00', point:'', deadline:'', covers:'',
